@@ -1,1 +1,34 @@
-
+body {
+  font-family: sans-serif;
+  background-color: #f0f0f0;
+  padding: 2em;
+  text-align: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+  max-width: 1000px;
+  margin: auto;
+}
+.materia {
+  background: #ffffff;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.materia:hover {
+  background-color: #e0f7fa;
+}
+.bloqueada {
+  background-color: #ddd;
+  color: #888;
+  cursor: not-allowed;
+}
+.aprobada {
+  text-decoration: line-through;
+  background-color: #d4edda;
+  color: #155724;
+}
